@@ -15,7 +15,7 @@ interface CardProps {
 const ProductCard: React.FC<CardProps> = ({ cardIcon, cardReviews, cardTitle, cardPrice, cardOff }) => {
     return (
         
-        <div className="relative group w-[354px] cursor-pointer overflow-hidden mt-4 "> 
+        <div className="container mx-auto relative group w-[354px] cursor-pointer overflow-hidden mt-4 "> 
             <div className="relative"> 
                 <img src={cardIcon} alt="" className="" />
 
@@ -42,19 +42,20 @@ const ProductCard: React.FC<CardProps> = ({ cardIcon, cardReviews, cardTitle, ca
                 </div>
             </div>
 
-            <div className="absolute top-[80px] start-[240px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <nav className="flex flex-col">
+            <div className="absolute top-[80px] right-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <nav className="flex flex-col items-end">
                     <NavLink className="w-16 h-16" to="/">
-                        <img src={Cart} alt="Wishlist" /> 
+                    <img src={Cart} alt="Wishlist" />
                     </NavLink>
                     <NavLink className="w-16 h-16" to="/">
-                        <img src={CompareProducts} alt="Wishlist" /> 
+                    <img src={CompareProducts} alt="Compare" />
                     </NavLink>
                     <NavLink className="w-16 h-16" to="/">
-                        <img src={ProductOverview} alt="Wishlist" /> 
+                    <img src={ProductOverview} alt="Overview" />
                     </NavLink>
                 </nav>
             </div>
+
         </div>
     );
 };

@@ -8,13 +8,15 @@ import email from "../../Assets/Email.svg"
 import phonepng from "../../Assets/Phone.svg"
 import Location from "../../Assets/Location.svg"
 
-interface FooterProps {
-}
 
-const Footer: React.FC<FooterProps> = ({}) => {
+
+const Footer = ({}) => {
+  const handleCall = () => {
+    window.location.href = 'tel:+1234567890';
+  };
     return (
-        <footer className="mt-5 bg-black font-poppins"> 
-          <article className='container pt-5 pb-5 mx-auto'>
+        <footer className="container mx-auto mt-5 bg-black font-poppins ps-[60px]"> 
+          <article className=' pt-5 pb-5 mx-auto'>
               <article className=' grid grid-cols-12 p-0 m-0'>
                 <div className='col-span-5'>
                     <NavLink className='m-0' to='/' >
@@ -58,38 +60,31 @@ const Footer: React.FC<FooterProps> = ({}) => {
                 </article>
                 <article className='col-span-3'>
                   <p className='text-white'>Address</p>
-                  <nav className='flex flex-col pt-3 text-light'>
-                    <NavLink className='text-white text-sx' to='/'>
-                      <div className='flex gap-2 align-center'>
-                        <figure className='text-xs'>
-                          <img className='m-0' src={email} />
-                        </figure>
-                        <p className='text-xs'>info@econex.pk</p>
+                  <div className='flex flex-col pt-3 text-light'>
+                      <div onClick={handleCall} className="flex items-center gap-1 font-poppins py-2 rounded cursor-pointer">
+                        <img className='m-0' src={phonepng} />
+                        <p className="">051-8908800</p>
                       </div>
-                      </NavLink>
-                      <NavLink className='text-white text-sx' to='/'>
-                        <div className='flex gap-2'>
-                          <figure className='pt-3 text-xs'>
-                            <img className='m-0' src={phonepng} />
-                          </figure>
-                          <p className='pt-3 text-xs'>051-8908800</p>
-                        </div>
-                      </NavLink>
-                      <NavLink className='text-white text-sx' to='/'>
+                      <a className="flex items-center gap-1 " href="mailto:info@econex.pk">
+                        <img src={email} alt="Email" />
+                        info@econex.pk
+                      </a>
+                    
+                      <div className='text-white text-sx' >
                         <div className='flex gap-2'>
                           <figure className='pt-3 text-xs'>
                             <img className='w-[30px] m-0' src={Location} />
                           </figure>
                           <p className='pt-3 text-xs'>1st Floor Triangular Plaza Street No 14 Bostan khan Road Scheme III Rawalpindi</p>
                         </div>
-                      </NavLink>
+                      </div>
                     
-                  </nav>
+                  </div>
                 </article>
               </article>
           </article>
           <hr className='max-w-[3000px] h-[1px] text-light'/>
-          <p className='pt-3 text-sm text-center text-white'>© Copyright ©2024 Econex. All Rights Reserved Copyright</p>
+          <p className='py-3 text-sm text-center text-white'>© Copyright ©2024 Econex. All Rights Reserved Copyright</p>
         </footer>
     );
 };

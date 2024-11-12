@@ -30,7 +30,7 @@ const Selectors: React.FC<DropdownProps> = ({ options }) => {
       </button>
 
       {isOpen && (
-        <div className="absolute mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-10 p-4">\
+        <div className="absolute left-[-125px] mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-10 p-4">\
                        
         </div>
       )}
