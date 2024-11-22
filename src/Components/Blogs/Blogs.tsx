@@ -1,73 +1,67 @@
+
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import OnlineRetail from '../../Assets/OnlineRetail.svg';
-import luxuriousitems from '../../Assets/luxuriousitems.svg';
+import LuxuriousItems from '../../Assets/luxuriousitems.svg';
 import Covid19 from '../../Assets/Covid19.svg';
 
 const Blogs = () => {
-  return (
-    <div className='container mx-auto mt-[121px]'>
-      <div className='flex justify-between items-center'>
-        <h2 className='text-xl text-primary'>Blogs</h2>
-        <NavLink to="/" className="flex items-center">
-          <button className="bg-primary text-white text-xs border border-light-grey rounded-full hover:bg-primary hover:text-white text-xs py-[10px] px-[20px]">
-            View All Blogs
-          </button>
-        </NavLink>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px] mt-8">
-        
-        <div className="max-w-[350px] mx-auto  p-4">
-          <img src={OnlineRetail} alt="" className="w-full h-64  " />
-          <p className="text-grey text-xs font-[500] flex items-center gap-[4px] mt-2">
-            17 Oct, 2023   |   E-Commerce                                
-          </p>
-          <h2 className="text-base text-primary truncate pt-[15px]">
-            The Future of Online Retail
-          </h2>    
-          <p className="text-xs text-secondary font-[500] truncate">
-            Online retail is continually evolving day by day, this enrichment in the online retail sector is driven by technological advancement and changing consumer preferences and behaviors.
-          </p>
-          <NavLink to="/">
-            <button className='text-xs text-grey font-[500] mt-2'>Read More</button>
-          </NavLink>
+    return (
+        <div className="container mx-auto mt-[123px]">
+            <div className='flex justify-between items-center '>
+              <h2 className='text-xl text-primary'>Latest Products</h2>
+              <NavLink to="/" className="flex items-center">
+                  <button className=" text-xs border border-light-grey rounded-full hover:bg-primary hover:text-white text-xs py-[10px] px-[20px]  transition duration-300 ease-in-out">
+                    View All Products
+                  </button>        
+                </NavLink>
+            </div>
+
+            <div className="flex gap-[30px] mt-8">
+                <div className=" overflow-hidden">
+                    <img src={OnlineRetail} alt="Online Retail" className="w-full h-64 object-cover rounded-lg" />
+                    <div className="pt-[15px]">
+                        <p className="text-sm text-grey">17 Oct, 2023 | E-Commerce</p>
+                        <h2 className="text-base overflow-hidden text-ellipsis whitespace-nowrap">
+                            The Future of Online Retail
+                        </h2>
+                        <p className="pt-[7px] text-xs text-light-grey line-clamp-2">
+                            Online retail is continually evolving day by day, this enrichment in the online retail sector is driven by technological advancement and changing consumer preferences and behaviors.
+                        </p>
+                        <NavLink to="/" className="pt-[7px] text-xs text-grey hover:underline">Read More</NavLink>
+                    </div>
+                </div>
+
+                <div className=" overflow-hidden">
+                    <img src={LuxuriousItems} alt="Luxurious Items" className="w-full h-64 object-cover rounded-lg" />
+                    <div className="pt-[15px]">
+                        <p className="text-sm text-grey">22 Nov, 2022 | Online Shopping</p>
+                        <h2 className="text-base overflow-hidden text-ellipsis whitespace-nowrap">
+                            Online Shopping for Luxurious Items
+                        </h2>
+                        <p className="pt-[7px] text-xs text-light-grey line-clamp-2">
+                            Online retail is continually evolving day by day, this enrichment in the online retail sector is driven by technological advancement and changing consumer preferences and behaviors.
+                        </p>
+                        <NavLink to="/" className="pt-[7px] text-xs text-grey hover:underline">Read More</NavLink>
+                    </div>
+                </div>
+
+                <div className=" overflow-hidden">
+                    <img src={Covid19} alt="COVID-19 Impact" className="w-full h-64 object-cover rounded-lg" />
+                    <div className="pt-[15px]">
+                        <p className="text-sm text-grey">17 Oct, 2023 | E-Commerce</p>
+                        <h2 className="text-base  overflow-hidden text-ellipsis whitespace-nowrap">
+                            Exploring how COVID-19 crisis created...
+                        </h2>
+                        <p className="pt-[7px] text-xs text-light-grey line-clamp-2">
+                            Online retail is continually evolving day by day, this enrichment in the online retail sector is driven by technological advancement and changing consumer preferences and behaviors.
+                        </p>
+                        <NavLink to="/" className="pt-[7px] text-xs text-grey hover:underline transition-all">Read More</NavLink>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div className="max-w-[350px] mx-auto  p-4 ">
-          <img src={luxuriousitems} alt="" className="w-full h-64 object-cover" />
-          <p className="text-grey text-xs font-[500] flex items-center gap-[4px] mt-2">
-            22 Nov, 2022   |   Online Shopping                              
-          </p>
-          <h2 className="text-base text-primary truncate pt-[15px]">
-            Online shopping for luxurious items
-          </h2>    
-          <p className="text-xs text-secondary font-[500] truncate">
-            Online retail is continually evolving day by day, this enrichment in the online retail sector is driven by technological advancement and changing consumer preferences and behaviors.
-          </p>
-          <NavLink to="/">
-            <button className='text-xs text-grey font-[500] mt-2'>Read More</button>
-          </NavLink>
-        </div>
-        
-        <div className="max-w-[350px] mx-auto  p-4 ">
-          <img src={Covid19} alt="" className="w-full h-64 object-cover " />
-          <p className="text-grey text-xs font-[500] flex items-center gap-[4px] mt-2">
-            17 Oct, 2023   |   E-Commerce                               
-          </p>
-          <h2 className="text-base text-primary truncate pt-[15px]">
-            Exploring how COVID-19 crisis created new opportunities
-          </h2>    
-          <p className="text-xs text-secondary font-[500] truncate">
-            Online retail is continually evolving day by day, this enrichment in the online retail sector is driven by technological advancement and changing consumer preferences and behaviors.
-          </p>
-          <NavLink to="/">
-            <button className='text-xs text-grey font-[500] mt-2'>Read More</button>
-          </NavLink>
-        </div>
-        
-      </div>
-    </div>
-  );
+    );
 };
 
 export default Blogs;

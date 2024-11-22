@@ -22,18 +22,18 @@ const Home = () => {
       <Header/>
       <div className='container mx-auto mt-[120px]'>
         <div className='flex justify-between items-center '>
-           <h2 className='text-xl text-primary'>Today’s Deals</h2>
-           <NavLink to="/" className="flex items-center">
-              <button className="bg-primary text-xs rounded-full hover:bg-primary text-white text-xs py-[10px] px-[20px]">
-                View All Products
-              </button>        
-            </NavLink>
-        </div>
+            <h2 className='text-xl text-primary'>Latest Products</h2>
+            <NavLink to="/" className="flex items-center">
+                <button className=" text-xs border border-light-grey rounded-full hover:bg-primary hover:text-white text-xs py-[10px] px-[20px]  transition duration-300 ease-in-out">
+                  View All Products
+                </button>        
+              </NavLink>
+          </div>
         <div className='flex gap-[30px]'>
-          <ProductCard  cardIcon={CardIcon} cardReviews='(1000+ reviews)' cardTitle="Wall Decoration 3 Frame Subhan Allah, Allhamdulillah, Allahu Akbar Art D2" cardPrice="PKR 960" cardOff="1,500"/>
-          <ProductCard  cardIcon={SweetResistance} cardReviews='(1000+ reviews)' cardTitle="12 Hrs Sweet Resistance N5 CHANEL PARIS P..." cardPrice="PKR 1,760" cardOff="2,500"/>
-          <ProductCard  cardIcon={MenTrackSuit} cardReviews='(1000+ reviews)' cardTitle="Men Track Suit For Winter Collection" cardPrice="PKR 2,250" cardOff="2,500"/>
-          <ProductCard  cardIcon={Kidssuit} cardReviews='(1000+ reviews)' cardTitle="Winter Tracksuit For Kid's By Capasia" cardPrice="PKR 1,600" cardOff=""/>
+          <ProductCard  cardIcon={CardIcon} cardReviews='(1000+ reviews)' cardTitle="Wall Decoration 3 Frame Subhan Allah, Allhamdulillah, Allahu Akbar Art D2" cardPrice="960" cardOff="1,500"/>
+          <ProductCard  cardIcon={SweetResistance} cardReviews='(1000+ reviews)' cardTitle="12 Hrs Sweet Resistance N5 CHANEL PARIS P..." cardPrice="1,760" cardOff="2,500"/>
+          <ProductCard  cardIcon={MenTrackSuit} cardReviews='(1000+ reviews)' cardTitle="Men Track Suit For Winter Collection" cardPrice="2,250" cardOff="2,500"/>
+          <ProductCard  cardIcon={Kidssuit} cardReviews='(1000+ reviews)' cardTitle="Winter Tracksuit For Kid's By Capasia" cardPrice="1,600" cardOff=""/>
         </div>
           
       </div>
@@ -43,16 +43,16 @@ const Home = () => {
         <div className='flex justify-between items-center '>
            <h2 className='text-xl text-primary'>Latest Products</h2>
            <NavLink to="/" className="flex items-center">
-              <button className=" text-xs border border-light-grey rounded-full hover:bg-primary hover:text-white text-xs py-[10px] px-[20px]">
+              <button className=" text-xs border border-light-grey rounded-full hover:bg-primary hover:text-white text-xs py-[10px] px-[20px]  transition duration-300 ease-in-out">
                 View All Products
               </button>        
             </NavLink>
         </div>
         <div className='flex gap-[30px]'>
-          <ProductCard  cardIcon={HalawaWax} cardReviews='(1000+ reviews)' cardTitle="Ecrin Halawa Wax" cardPrice="PKR 1,050" cardOff="2,000"/>
-          <ProductCard  cardIcon={RICEDEAL} cardReviews='(1000+ reviews)' cardTitle="NTS RICE DEAL" cardPrice="PKR 3,250" cardOff="4,000"/>
-          <ProductCard  cardIcon={earings} cardReviews='(1000+ reviews)' cardTitle="New hanging Pearl studs earings for Girls" cardPrice="PKR 500" cardOff="1,000"/>
-          <ProductCard  cardIcon={Copybook} cardReviews='(1000+ reviews)' cardTitle="Magic Practice Copybook,(4BOOKS+10 REFILL)" cardPrice="PKR 900" cardOff=""/>
+          <ProductCard  cardIcon={HalawaWax} cardReviews='(1000+ reviews)' cardTitle="Ecrin Halawa Wax" cardPrice="1,050" cardOff="2,000"/>
+          <ProductCard  cardIcon={RICEDEAL} cardReviews='(1000+ reviews)' cardTitle="NTS RICE DEAL" cardPrice="3,250" cardOff="4,000"/>
+          <ProductCard  cardIcon={earings} cardReviews='(1000+ reviews)' cardTitle="New hanging Pearl studs earings for Girls" cardPrice="500" cardOff="1,000"/>
+          <ProductCard  cardIcon={Copybook} cardReviews='(1000+ reviews)' cardTitle="Magic Practice Copybook,(4BOOKS+10 REFILL)" cardPrice="900" cardOff=""/>
         </div>
           
       </div>
@@ -61,11 +61,11 @@ const Home = () => {
       <Collection/>
 
       <div className='container mx-auto mt-[120px]'>
-        <div className='flex justify-between items-center '>
-           <h2 className='text-xl text-primary'>Featured Shops</h2>
+        <div className='flex justify-between items-center mb-[42px]'>
+           <h2 className='text-xl text-primary'>Latest Products</h2>
            <NavLink to="/" className="flex items-center">
-              <button className="bg-primary text-white text-xs border border-light-grey rounded-full hover:bg-primary hover:text-white text-xs py-[10px] px-[20px]">
-                View All Shops
+              <button className=" text-xs border border-light-grey rounded-full hover:bg-primary hover:text-white text-xs py-[10px] px-[20px]  transition duration-300 ease-in-out">
+                View All Products
               </button>        
             </NavLink>
         </div>
